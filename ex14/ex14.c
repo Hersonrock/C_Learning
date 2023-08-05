@@ -7,7 +7,7 @@ void print_letters(char arg[]);
 
 void print_arguments(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 1;
 
 	for(; i < argc; i++)
 	{
