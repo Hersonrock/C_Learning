@@ -203,6 +203,11 @@ int main(int argc, char *argv[])
 		case 'l':
 			Database_list(conn);
 			break;
+		case 'e':
+			printf("The size of Address: %ld\n",sizeof(struct Address));
+			printf("The size of Database: %ld\n",sizeof(struct Database));
+			printf("The size of Connection: %ld\n",sizeof(struct Connection));
+			break;
 		default:
 			die("Invalid actions: c=create, g=get, s=set, d=del, l=list");
 	}
